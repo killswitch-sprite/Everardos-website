@@ -1,10 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Everardos' Website</title>
+  <meta charset="UTF-8">
+  <title>everardos // matrix site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>¡Saludos, Mundo! Nos llena de alegría presentarles la mejor, más grandiosa y singular creación del universo... ¡Everardo III Suárez!</h1>
-<p>Este es mi segunda pagina de prueba.</p>
+  <div class="scanline"></div>
+  <header class="header">
+    <div class="logo">everardos<span class="cursor">_</span></div>
+    <nav class="nav">
+      <a href="#about">/about</a>
+      <a href="#skills">/skills</a>
+      <a href="#projects">/projects</a>
+      <a href="#contact">/contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">SYSTEM ONLINE: <span>killswitch-sprite</span></h1>
+      <p class="hero-subtitle">
+        IT specialist · network & systems · automation · troubleshooting.<br>
+        Construyendo soluciones robustas, seguras y eficientes.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">VIEW PROJECTS</a>
+        <a href="#contact" class="btn ghost">INITIATE CONTACT</a>
+      </div>
+      <div class="hero-terminal">
+        <div class="terminal-header">/console</div>
+        <div class="terminal-body">
+          <p>> boot sequence: OK</p>
+          <p>> network status: STABLE</p>
+          <p>> services: IT, automation, infra, support</p>
+          <p>> location: Illinois, USA</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+    <section id="about" class="section">
+      <h2 class="section-title">/about</h2>
+      <p>
+        Soy un profesional de IT con experiencia en administración de redes y sistemas,
+        automatización, y resolución avanzada de problemas. Me enfoco en construir
+        infraestructuras estables, seguras y fáciles de mantener.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section-title">/skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Infra & Networking</h3>
+          <ul>
+            <li>Windows Server, AD, Group Policy</li>
+            <li>Routing, VLANs, VPN</li>
+            <li>Monitoring & logging</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Automation</h3>
+          <ul>
+            <li>PowerShell scripting</li>
+            <li>Python utilities</li>
+            <li>Task automation & deployment</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Troubleshooting</h3>
+          <ul>
+            <li>Root cause analysis</li>
+            <li>Performance & reliability</li>
+            <li>Documentation & repeatable fixes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">/projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Infra Hardening</h3>
+          <p>
+            Diseño y endurecimiento de entornos de red y servidores para minimizar
+            fallos y mejorar la seguridad.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Automation Toolkit</h3>
+          <p>
+            Scripts y herramientas para despliegue, mantenimiento y monitoreo
+            de sistemas de forma eficiente.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Support & Ops</h3>
+          <p>
+            Procesos claros para soporte técnico, documentación y respuesta rápida
+            ante incidentes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">/contact</h2>
+      <p>
+        ¿Quieres colaborar, contratar servicios, o hablar de infraestructura y automatización?
+        Puedes contactarme directamente:
+      </p>
+      <div class="contact-block">
+        <p><span class="label">Email:</span> everardo.suarez@outlook.com</p>
+        <p><span class="label">GitHub:</span> <a href="https://github.com/killswitch-sprite" target="_blank">killswitch-sprite</a></p>
+        <p><span class="label">Domain:</span> everardos.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> everardos · matrix‑style interface · hosted on GitHub Pages</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
